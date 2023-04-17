@@ -88,8 +88,9 @@ section {
 <script type="text/javascript">
   $(document).on('submit','#post-form',function(e){
     e.preventDefault();
-
-    $.ajax({
+    
+    // AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+    $.ajax({  // AJAX = Asynchronous JavaScript And XML( XML provides a standard method to access information, making it easier for applications and devices of all kinds to use, store, transmit, and display data)
       type:'POST',
       url:'/create',
       data:{
